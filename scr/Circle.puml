@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Circle {
+radius: double
+color: String
+Circle()
+Circle(radius:double)
+getArea(): double
+getRadius(): double
+setRadius(radius:double): void
+toString(): String
+}
+
+Circle <|-- Cylinder :extend
+
+class Cylinder{
+height: double
+getVolume():double
+toString(): String
+}
+
+@enduml
